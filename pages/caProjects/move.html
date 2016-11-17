@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='style.css'/>
+    <style>
+    html, body {
+margin: 0;
+
+}
+
+h1, h2, a {
+font-family: 'Oswald', sans-serif;
+}
+
+p {
+font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+width: 940px;
+margin: 0 auto;
+}
+
+/* Main */
+.main {
+background:url(https://s3.amazonaws.com/codecademy-content/projects/move/bg.jpg) ;
+background-size: cover;
+height: 600px;
+text-align: center;
+}
+
+.main .container {
+position: relative;
+top: 100px;
+}
+
+.main h1 {
+text-transform: uppercase;
+font-size: 150px;
+color: #fff;
+margin: 0 ;
+}
+
+.main p {
+font-size: 18px;
+color: #fff;
+
+}
+.main .btn, .footer .btn {
+
+
+background:#000;
+text-transform:uppercase;
+color:#fff;
+text-decoration:none;
+padding: 10px 20px;
+
+}
+/*
+.btn:hover {
+  background: #ffb84d;
+} */
+
+/* Supporting */
+.supporting {
+background: #1c1c1c;
+text-align: center;
+padding: 50px 0 80px;
+}
+
+.supporting .col {
+float: left;
+width: 28%;
+padding: 10px;
+}
+
+.supporting h1,
+.supporting h2 {
+color: #ffa800;
+font-size: 20px;
+margin-bottom: 10px;
+text-transform:uppercase;
+
+}
+
+.clearfix {
+clear: both;
+}
+
+.supporting p {
+color: #efefef;
+margin-bottom: 20px;
+line-height: 20px;
+font-size: 12px;
+}
+
+.supporting .btn {
+background: #eee;
+color: #1c1c1c;
+text-decoration: none;
+padding: 10px 20px;
+text-transform:uppercase;
+/*
+font-size: 18px;
+display: inline-block;
+*/
+}
+
+/* Feature */
+.feature {
+background: url(https://s3.amazonaws.com/codecademy-content/projects/move/feature.jpg);
+background-size: cover;
+height: 600px;
+text-align: center;
+}
+
+.feature .container{
+position: relative;
+top: 200px;
+}
+.feature h1,
+.feature h2 {
+color: #fff;
+font-size: 40px;
+margin: 0;
+padding:50px 0 0;
+}
+
+/* Footer */
+.footer {
+background: url(https://s3.amazonaws.com/codecademy-content/projects/move/footer.jpg);
+background-size: cover;
+height: 600px;
+text-align: center;
+}
+
+
+.footer .container{
+position: relative;
+top: 200px;
+}
+
+.footer h1,
+.footer h2 {
+color: #fff;
+font-size: 40px;
+margin: 0 0 20px 0;
+padding:50px 0 0;
+text-transform:uppercase;
+}
+
+.footer p {
+color: #fff;
+margin: 0 0 20px 0;
+font-size: 18px;
+}
+
+.btn:hover {
+  background: #ffb84d;
+}
+
+
+
+@media (min-width:600px) {
+.main h1 {
+  font-size: 200px;
+}
+
+.supporting .col {
+  width: 30%;
+}
+
+.supporting h2 {
+  font-size: 40px;
+}
+
+.supporting p {
+  font-size: 14px;
+}
+
+.feature h2 {
+  font-size: 60px;
+}
+}
+    </style>
+  </head>
+  <body>
+
+    <div class="main">
+      <div class="container">
+      	<h1>Move</h1>
+        <p>Form healthy habits to take your fitness to the next level.</p>
+        <a  href="#" class="btn">Start now</a>
+      </div>
+    </div>
+
+    <div class="supporting">
+      <div class="container">
+        <div class="col">
+          <h2>Move</h2>
+          <p>Become more active by tracking your runs, rides, and walks.</p>
+        </div>
+        <div class="col">
+          <h2>Sync</h2>
+          <p>Access your activity on your phone, tablet, or computer.</p>
+        </div>
+        <div class="col">
+          <h2>Compete</h2>
+          <p>Set personal challenges and see how you rank against your friends.</p>
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+
+    <div class="feature">
+      <div class="container">
+        <h2>
+          MOVE. REST. RECOVER. MOVE.
+        </h2>
+      </div>
+    </div>
+    <div class="supporting">
+      <div class="container">
+      	<h2>Go Premium</h2>
+        <p>Receive recommendations based on your activity to level up.</p>
+        <a  href="#" class="btn">Learn more</a>
+      </div>
+    </div>
+  <div class="footer">
+      <div class="container">
+      	<h2>Stop scrolling. Start moving</h2>
+
+        <a  href="#" class="btn">Start now</a>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='style.css'/>
+    <style>
+
+      html, body {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px; 
+  padding: 0 10px; 
+}
+
+
+
+/* Header */
+.header {
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg );
+  height: 800px;
+  text-align: center;
+  background-color: #000;
+}
+
+.header .container {
+  position: relative;
+  top: 200px;
+   color: #fff;
+ 
+}
+
+.header h1 {
+  font-size: 80px;
+  line-height: 100px; 
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  
+}
+
+@media (min-width:850px) {
+  .header h1 {
+    font-size: 120px;
+  }
+}
+
+.header p {
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.btn {
+    border: 1px solid black;
+    color: #fff;
+    padding: 10px;
+    background: #000;
+    text-decoration: none;
+  }
+.btn:hover, .nav ul li:hover{
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;  
+   
+}
+
+
+/* Nav */
+.nav {
+  background:#000;
+  height: 80px; 
+  width: 100%;
+}
+
+  
+.nav ul {
+  list-style: none;
+  margin: 0 auto; 
+ 
+  text-align: center;
+  
+}
+.nav ul li {
+  display: inline-block;
+  color: #fff;
+  height: 80px;
+  line-height: 80px; 
+  list-style: none;
+  padding: 0 10px;
+  transition: background .5s;
+ 
+}
+
+/* Main */
+
+/*
+.main  {
+  background: #fff; 
+    
+}
+
+*/
+.main .container {
+  margin: 80px auto;
+}
+
+.main img {
+  float: left;
+  margin: 50px 80px 50px 0;
+}
+
+
+/* Jumbotron */
+.jumbotron {
+    background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg)  center center;
+  background-size: cover;
+  height: 600px; 
+  text-align: right;
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 220px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+}
+
+.jumbotron p {
+  
+  color: #fff;
+}
+
+/* Footer */
+.footer  { 
+  background: #000;
+  height: 80px;
+}
+
+.footer p { 
+  margin: 0;
+  color: #fff;
+  height: 80px; 
+  line-height: 80px;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+
+
+  .main img {
+    width: 100%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1>innovation cloud</h1>
+        <p>connect your ideas globally</p>
+          <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li>Register</li>
+          <li>Schedule</li>
+          <li>Sponsors</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        
+        <img src="https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/cloud.svg" height="128" width="196"/>
+        <h2>The Innovation Cloud Conference</h2>
+        <p>Connect with the best minds across a wide range of industries to share ideas and brainstorm new solutions to challenging problems.</p>
+        <p>Hear industry leaders talk about what worked (and what didn't) so that you can save time on your most challenging projects.</p>
+         <p>Learn about the latest research and technologies that you can use immediately to invent the future.</p>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Stay Connected</h1>
+        <p>Receive weekly insights from industry insiders.</p>
+         <a href="#" class="btn">join</a> 
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <p> &copy; Innovation Cloud Conference</p>
+      </div>
+      </div>
+  </body>
+</html>

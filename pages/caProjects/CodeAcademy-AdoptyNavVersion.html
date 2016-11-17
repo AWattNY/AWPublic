@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    html, body {
+margin: 0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+}
+.container {
+max-width: 940px;
+margin: 0 auto;
+padding: 0;
+}
+
+/*header*/
+
+.header {
+border: 1px solid red;
+background-color: #30627e;
+height: 80px;
+
+}
+
+.header .main {
+background-color:#E52364;
+color: #fff;
+font-size: 28px;
+
+
+}
+
+
+.header ul {
+border: 1px solid red;
+height: 70px;
+line-height: 70px;
+margin:0;
+
+
+
+}
+.header li {
+border: 1px solid red;
+display:inline-block;
+padding: 0 20px;
+margin: 0;
+transition: background .5s;
+
+}
+
+.header a {
+color: #fff;
+font-size: 20px;
+text-decoration: none;
+margin: 0;
+
+}
+
+.header ul li:hover {
+background-color: #43728c;
+
+transition: background .5s;
+
+
+
+
+}
+
+
+
+@media (max-width: 500px) {
+ul li {
+  width: 100%;
+}
+}
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+
+          <ul>
+            <li><a href="#" class="main">Adoptly</a></li>
+            <li><a href="#" > About</a></li>
+            <li><a href="#" > Animals</a></li>
+            <li><a href="#" > Blog</a></li>
+            <li><a href="#" > Events</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+      </div>
+    </div>
+
+    <div class="supporting">
+      <div class="container">
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    html, body {
+margin: 0;
+padding: 0;
+font-family: 'Arvo', serif;
+font-size: 16px;
+}
+
+.container {
+max-width: 940px;
+margin: 0 auto;
+}
+
+
+/* Header */
+.header {
+margin:0;
+Padding: 40px ;
+}
+
+.nav-pills li a {
+color: #d8192f;
+
+}
+
+.nav-pills  {
+
+float: right;
+
+}
+
+
+.nav-pills li.active a,
+.nav-pills li a:hover,
+.section .btn:hover {
+background-color:rgba(216,25,47,1);
+box-shadow:0 2px 4px rgba(0,0,0,.5);
+color:#fff;
+}
+
+
+/* Jumbotron */
+
+.jumbotron {
+background: url(https://s3.amazonaws.com/codecademy-content/projects/bestbite/bg.jpg) ;
+background-size: cover;
+height: 500px;
+}
+
+.jumbotron .container {
+position: relative;
+top: 60px
+}
+
+.jumbotron h2 {
+color: #fff;
+font-size: 60px;
+text-align: right;
+}
+
+
+
+/* Banner */
+.banner  {
+  background-color:#36343f;
+  height:180px;
+  color: #fff;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.section .btn {
+border: 0px;
+background-color: rgba(216,25,47,.5);
+color: #fff;
+margin-top:20px;
+}
+
+.section {
+          text-align: center;
+          padding-top: 40px;
+      }
+
+.section h3 {
+margin:0;
+text-align: center;
+padding: 0 0 20px;
+}
+
+.section h4 {
+text-align: center;
+ color:  #d8192f;
+}
+.section ul  {
+
+text-align: center;
+
+}
+
+.section ul li {
+list-style: none;
+}
+
+.footer  {
+background-color:#eee;
+text-align: center;
+height: 70px;
+line-height: 70px;
+ padding: 40px 0px 100px;
+}
+.footer a {
+color:  #d8192f;
+text-decoration:none;
+}
+/* Media Queries */
+@media (max-width: 680px) {
+.header h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.nav {
+  float: none;
+  margin: 0 auto;
+}
+.banner {
+  height: 220px;
+}
+
+.nav-pills li:first-child a  {
+  margin-left: 0;
+}
+}
+    </style>
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="container">
+				<div class="row">
+
+            <div class="col-sm-6">
+            	<h1>
+                BestBite
+              </h1>
+
+            </div>
+          	<div class="col-sm-6">
+            	<ul class="nav nav-pills">
+  							<li  class="active"><a href="#">About</a></li>
+  							<li ><a href="#">Sign Up</a></li>
+ 								 <li ><a href="#">Log In</a></li>
+							</ul>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+     			<div class="col-sm-3 col-md-offset-1">
+      			<h2>Browse.</h2>
+      			<h2>Create.</h2>
+        		<h2>Share.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section banner">
+      <div class="container">
+        <h3>Always have the answer to "What's for dinner?"</h3>
+        <a class="btn btn-lg" href="#" role="button">Learn More</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+      	<div class="page-header">
+      	  <h3>Newest Contributions</h3>
+        </div>
+          <div class="row">
+     			<div class="col-md-4 ">
+            <h4>Breakfast</h4>
+            <ul>
+              <li>Maple French Toast</li>
+              <li>Rolled Oats with Berries</li>
+            </ul>
+
+          </div>
+         <div class="col-md-4 ">
+            <h4>Dinner</h4>
+            <ul>
+              <li>Black Bean Stuffed Peppers</li>
+              <li>Pesto Pasta with Spinach</li>
+            </ul>
+
+          </div>
+         <div class="col-md-4 ">
+            <h4>Dessert</h4>
+            <ul>
+              <li>German Chocolate Cake</li>
+              <li>Hazelnut Tiramisu</li>
+            </ul>
+
+          </div>
+        </div>
+      	</div>
+
+      </div>
+
+
+    <div class="footer">
+      <div class="container">
+      	<div class="row">
+     			<div class="col-md-4 ">
+            <p>&copy;2014 BestBite</p>
+
+          </div>
+         <div class="col-md-4 ">
+         	<a fref="#">BestBite.com  </a>
+         </div>
+         <div class="col-md-4 ">
+           <p>Greentree Lane, Orlando, FL  </p>
+
+         </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

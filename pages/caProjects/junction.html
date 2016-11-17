@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    html, body {
+margin: 0;
+padding: 0;
+font-family: 'Merriweather', serif;
+}
+
+body {
+background: url(https://s3.amazonaws.com/codecademy-content/projects/junction/bg.jpg) no-repeat center center fixed;
+background-size: cover;
+}
+
+.container {
+max-width:940px;
+}
+
+/* Header */
+.header {
+background-color: rgba(0,0,0,.5);
+padding: 10px 0;
+
+
+}
+
+.logo {
+
+display: inline-block;
+margin: 0 30px 0;
+
+}
+.nav {
+
+display: inline-block;
+padding: 10px;
+}
+
+.nav li {
+display: inline;
+color: #fff;
+padding: 0 10px;
+}
+
+
+.nav a:hover {
+color: #00ffbc;
+border-bottom: 1px solid #00ffbc;
+cursor: pointer;
+}
+
+.nav a {
+color: #fff;
+text-decoration: none;
+}
+
+/* Jumbotron */
+.jumbotron {
+
+
+
+position: relative;
+top: 50px;
+background-color: rgba(255,255,255,0);
+color:#fff;
+text-align: center;
+text-shadow: 0 2px 3px rgba(0,0,0,.4);
+/*Padding-bottom: 50px;*/
+}
+
+
+/* Supporting */
+.supporting {
+
+margin: 50px auto;
+text-shadow: 0 2px 3px rgba(0,0,0,.4);
+color: #fff;
+text-align: center;
+}
+
+.supporting .container {
+padding: 40px 0;
+
+}
+
+.joinJunction {
+
+text-align: center;
+margin: 40px auto;
+}
+
+.joinJunction .btn {
+background-color:rgba(0,255,188,0.5);
+color: #fff;
+font-size: 20px;
+padding: 5px 50px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+
+         <div class="logo">
+         	<img src="https://s3.amazonaws.com/codecademy-content/projects/junction/logo.svg" height="36" width="36" />
+         </div>
+         <div class="nav">
+         	<ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+
+          </ul>
+         </div>
+        </div>
+      </div>
+
+
+
+    <div class="jumbotron">
+      <div class="container">
+      	<h1>Meet Junction</h1>
+      </div>
+    </div>
+
+    <div class="supporting">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+          	<img src="https://s3.amazonaws.com/codecademy-content/projects/junction/read.svg" height="128" width="128"/>
+          	<h2>Read</h2>
+            <p>Discover new stories and follow your favorite writers.</p>
+          </div>
+          <div class="col-md-4">
+          	<img src="https://s3.amazonaws.com/codecademy-content/projects/junction/write.svg" height="128" width="128"/>
+            <h2>Write</h2>
+            <p>Create stories about our world, or entirely new worlds.</p>
+          </div>
+          <div class="col-md-4">
+          	<img src="https://s3.amazonaws.com/codecademy-content/projects/junction/talk.svg" height="128" width="128"/>
+            <h2>Talk</h2>
+            <p>Join the conversation by talking with your favorite readers and your fans.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="joinJunction">
+      <div class="container">
+        <a href="#" class="btn">Join</a>
+      </div>
+
+    </div>
+  </body>
+</html>

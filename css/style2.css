@@ -1,0 +1,109 @@
+html, body {
+margin: 0;
+padding: 0;
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+}
+
+
+
+/*header*/
+
+.header {
+  background:#fff/*#CED6D6  #4e4e4e  #9E7F7D  #5f5f5f */;
+
+}
+.header #logo {
+
+margin-top:5px;
+}
+
+.header ul li {
+  display: inline-block;
+
+  /* margin-top:15px;
+  padding: 4px 10px;*/
+}
+
+.header li a {
+  /*background:#fff;*/
+  color: #939598;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 10px;
+}
+.header li a:hover {
+  color: #375D81;
+}
+
+/*main*/
+
+.main {
+background: url(../img/sFAerial.jpg) no-repeat center center;
+background-size: cover;
+height: 600px;
+/*border-top: 6px solid #183152;
+border-bottom: 6px solid #183152;*/
+
+}
+
+.main .container {
+  position: relative;
+  top:250px;
+  text-align: right;
+
+}
+.main h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: right;
+
+}
+
+.main h1 span {
+  background:#375D81;
+}
+
+.main p {
+  color: #fff;
+}
+/*footer*/
+
+.footer {
+
+  /*width: 100%;*/
+  background: #375D81;
+  color: #fff;
+  padding: 20px 0;
+
+
+}
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+
+
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* .footer a {
+  text-decoration: none;
+  color: #88BBD6;
+  font-weight: bold;
+
+} */
+.footer p {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  height: 25px;
+  line-height: 25px;
+}
+.footer #git {
+  padding-left: 20px;
+}

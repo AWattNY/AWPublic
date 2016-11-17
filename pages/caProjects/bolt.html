@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+    html, body {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 970px;
+
+}
+
+/*jumbotron -header- main */
+
+.jumbotron  {
+
+  background: #000;
+  margin: 0 auto;
+}
+
+
+
+.header li {
+  display: inline-block;
+
+
+}
+
+.header .btn, .main .btn {
+
+  background: black;
+  color:#0393FF;
+  border: 1px solid #0393FF;
+  border-radius: 0;
+  margin: 20px 10px;
+}
+
+.header .btn:hover , .main .btn:hover {
+  background:#0393FF;
+  color: #fff;
+}
+.main {
+  text-align: center;
+
+
+}
+.main h1 {
+  color: #fff;
+
+
+}
+
+.form-control {
+  background: #000;
+  border-radius:0px;
+ 	border: 1px solid #FFF;
+  color: #fff;
+}
+#search {
+	width: 400px;
+}
+#search:hover {
+  border-bottom: 1px solid #0393FF;
+}
+
+/*supporting*/
+
+.supporting h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.supporting p {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.supporting {
+
+  background: #000;
+}
+
+.supporting .thumbnail {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+/*.supporting {
+  background-image: url(s3.amazonaws.com/codecademy-content/projects/bolt-network/diagmonds_@2X.png) ;
+  background-size: 141px 142px;
+}*/
+/*feature*/
+
+.feature {
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/bolt-network/feature.jpg) no-repeat center center;
+  position: cover;
+  height: 380px;
+  padding-top: 100px;
+}
+.feature h2 {
+  color: #0393FF;
+}
+.feature  p {
+  color: #fff;
+}
+/*footer*/
+
+.footer h3 {
+  color: #fff;
+  font-size: 18px;
+
+}
+.footer ul {
+
+  list-style: none;
+  color: #0393FF;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="header">
+					<div class="row">
+            <div class="col-md-2">
+            	<img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/logo.svg" width="180" height="34" />
+            </div>
+            <div class="pull-right">
+            	<ul>
+                <li><a class="btn" href="#">Log in</a></li>
+                <li><a class="btn" href="#">Sign up</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="main">
+        	<h1>Watch your favorite movies, instantly.</h1>
+          <a class="btn" href="#">Learn more</a>
+          <form class="form-inline">
+ 	 					<div class="form-group">
+    				 	 <!--<label class=".sr-only">Browse the collection</label> -->
+    					<input type="text" class="form-control"  id="search" placeholder="Browse the collection">
+  					</div>
+            <button type="submit" class="btn btn-default">Search</button>
+					</form>
+        </div>
+      </div>
+    </div>
+
+    <div class="supporting">
+      <div class="container">
+				<h2>A world of movies at your fingertips.</h2>
+        <p>Choose from the latest titles, with new movies added every day.</p>
+        <div class="row">
+          <div class="col-md-8">
+          	<div class="thumbnail" >
+              <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/the-avengers.jpg" /></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+          	<div class="thumbnail" >
+              <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/harry-potter.jpg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+          	<div class="thumbnail" >
+              <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/frozen.jpg" /></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+          	<div class="thumbnail" >
+              <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/iron-man.jpg" /></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+          	<div class="thumbnail" >
+              <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/transformers.jpg" /></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+           <div class="thumbnail" >
+             <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/lord-of-the-rings.jpg" /></a>
+            </div>
+          </div>
+          <div class="col-md-8">
+          	<div class="thumbnail" >
+              <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/skyfall.jpg" /></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+          	<div class="thumbnail" >
+              <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/the-dark-knight.jpg" /></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+          	<div class="thumbnail" >
+              <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/pirates-of-the-caribbean.jpg" /></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+          	<div class="thumbnail" >
+              <a href="#"><img src="https://s3.amazonaws.com/codecademy-content/projects/bolt-network/toy-story-3.jpg" /></a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="container">
+      	<h2>Available everywhere</h2>
+        <p>Start watching on one device, and pick up where you left off on another device.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+       	<div class="row">
+          <div class="col-md-3">
+						<h3>Bolt</h3>
+            <ul>
+              <li>Careers</li>
+              <li>Terms</li>
+              <li>Help</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+          	<h3>More Bolt</h3>
+            <ul>
+              <li>Gift Cards</li>
+              <li>Trailers</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+          	<h3>News</h3>
+            <ul>
+              <li>Blog</li>
+              <li>Twitter</li>
+              <li>YouTube</li>
+              <li>Google+</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

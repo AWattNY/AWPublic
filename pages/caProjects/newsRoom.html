@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+  <link rel='stylesheet' href='style.css'/>
+  <style>
+  html, body {
+margin: 0;
+padding: 0;
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Montserrat', sans-serif;
+font-weight: 400; }
+
+/*header*/
+.header {
+background: #000;
+padding-bottom: 20px;
+
+}
+
+.header #search-form , .header #search-btn {
+background: #000;
+border: 0;
+border-bottom: 1px solid #fff;
+border-radius: 0;
+color: #fff;
+
+}
+
+.header #search-btn {
+padding-bottom: 7px;
+border-color: #1a77ff;
+margin-left: 10px;
+
+}
+
+.header #search-form:hover {
+border-color: #1a77ff;
+}
+
+/*menu*/
+.menu {
+background: #152230;
+}
+.menu li {
+list-style: none;
+display: inline-block;
+}
+
+.menu li a {
+color: #fff;
+
+}
+
+.menu .active, .menu li a:hover {
+background: #1a77ff;
+}
+
+/*main*/
+
+.main {
+background: url(https://s3.amazonaws.com/codecademy-content/projects/newsroom/bass-bg.jpg)no-repeat center center;
+background-size: cover;
+height: 500px;
+}
+
+.main .container {
+position: relative;
+top: 50px;
+
+}
+/* using span limits the border-bottom to text only*/
+.main span  {
+color: #fff;
+font-size: 60px;
+border-bottom: 3px solid #1a77ff;
+}
+.main p {
+color: #fff;
+font-size: 20px;
+}
+
+.todayDate {
+font-size: 16px;
+}
+/*supporting*/
+.supporting {
+background: #f2f2f2;
+
+}
+
+.supporting ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.supporting .col-md-8 {
+
+background: #fff;
+
+padding: 40px 0px 40px 40px;
+
+}
+
+.supporting .col-md-4 {
+
+background: #000;
+color: #fff;
+
+padding: 40px 0px 40px 40px;
+
+
+}
+.supporting .col-md-12 {
+
+padding: 0;
+
+
+
+}
+.supporting img {
+
+width: 100%;
+
+}
+.supporting span  {
+
+font-size: 18px;
+border-bottom: 3px solid #1a77ff;
+}
+
+.supporting .row {
+margin: 50px 0;
+}
+
+/*footer*/
+.footer {
+background: #000;
+height: 80px;
+line-height: 80px;
+
+}
+.footer ul {
+padding: 0;
+}
+
+.footer p {
+color: #fff;
+}
+.footer ul li {
+display: inline;
+padding-right: 30px;
+
+}
+
+.footer a {
+color: #fff;
+text-decoration: none;
+}
+.footer a:hover {
+ color:#1a77ff;
+}
+
+
+
+  </style>
+  </head>
+  <body>
+    <div class="header">
+    	<div class="container">
+      	<img src="https://s3.amazonaws.com/codecademy-content/projects/newsroom/logo.svg"  width="210px" height="50px"/>
+
+        <form class="form-inline pull-right">
+ 					 <div class="form-group">
+
+    				<input type="text" class="form-control" id="search-form" placeholder="Search NewsRoom">
+ 					</div>
+  				<button type="submit" id="search-btn">Search</button>
+				</form>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <ul class="nav">
+          <li class="active"><a href="#" >Top Stories</a></li>
+          <li><a href="#">World</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Entertainment</a></li>
+					<li><a href="#">Sports</a></li>
+          <li><a href="#">Science</a></li>
+          <li><a href="#">Health</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <p id="todayDate"></p>
+            <h3><span>Introducing Bass</span></h3>
+            <p>A new app by the creators of Shutterbugg that lets you enjoy your favorite music everywhere you go.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="supporting">
+      <div class="container">
+      	<div class="row">
+          <div class="col-md-8">
+            <h3>Latest News</h3>
+            <ul>
+              <li>
+                <p class="date">November 5, 2014</p>
+                <h4><span>MOVE Launches in London</span></h4>
+              </li>
+              <li>
+                <p class="date">November 4, 2014</p>
+                <h4><span>Introducing Excursion</span></h4>
+              </li>
+              <li>
+                <p class="date">November 2, 2014</p>
+                <h4><span>Improvements to Shutterbugg Arrive</span></h4>
+              </li>
+            </ul>
+				  </div>
+          <div class="col-md-4 sidebar">
+            <h3> Upcoming Events</h3>
+            <ul>
+              <li>
+                <p class="date">November 8-12, 2014</p>
+                <h4><span>Innovation Cloud 2014</span></h4>
+              </li>
+              <li>
+                <p class="date">November 21, 2014</p>
+                <h4><span>LL Retrospective</span></h4>
+              </li>
+              <li>
+                <p class="date">December 5, 2014</p>
+                <h4><span>M.O.N.E.Y. Launch Event</span></h4>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+          	<img src="https://s3.amazonaws.com/codecademy-content/projects/newsroom/ad.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <p class="pull-right">&copy;2014 Newsroom. </p>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Send Feedback</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <!--JavaScript Section -->
+		<script>
+			var d = new Date();
+			document.getElementById("todayDate").innerHTML = d.toDateString();
+		</script>
+
+  </body>
+</html>

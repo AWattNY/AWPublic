@@ -1,0 +1,162 @@
+html, body {
+margin: 0;
+padding: 0;
+font-family: 'Lato', sans-serif;
+font-weight: 300;
+}
+
+
+
+/*header*/
+
+.navbar-header {
+  
+  padding-top: 5px;
+  
+}
+
+.navbar-brand {
+  padding: 0 15px;
+}
+
+.header {
+  background:#fff /*#CED6D6  #4e4e4e  #9E7F7D  #5f5f5f */;
+  border: 1px solid #939598;
+  margin: 0;
+}
+.header img {
+  width: 255px;
+  height: 50px;
+}
+.icon-bar {
+  color: #939598;
+  border-color: #939598;
+  background-color: #939598;
+}
+
+/*.header #logo {
+
+margin-top:5px;
+}*/
+
+.header ul li {
+  /*display: inline-block;
+
+   margin-top:15px;
+  padding: 4px 10px;*/
+} 
+
+.header li a {
+  /*background:#fff;*/
+  color: #939598;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 10px;
+}
+.header li a:hover {
+  color: #375D81;
+}
+
+/*main*/
+
+.main {
+position:relative;
+background: url(../img/sFAerial.jpg) no-repeat center center;
+background-size: cover;
+height: 600px;
+/*border: 2px solid #939598;*/
+margin-top: 60px;
+
+/*border-bottom: 6px solid #c4d7ed;*/
+
+}
+
+.main .col-md-5 {
+  position:absolute;
+  top: 250px;
+  right: 0;
+  /*height: 100%;*/
+  text-align: right;
+  background: rgba(55, 93, 129,0.6);
+
+}
+
+
+.main h1 {
+
+
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+
+
+  /*background:#375D81;*/
+}
+
+/*.main h1 span {
+  background-color: #375D81;
+  opacity: .6;
+
+}*/
+
+.main p {
+  color: #fff;
+}
+/*footer*/
+
+.footer {
+
+  /*width: 100%;*/
+  background: #375D81;
+  color: #fff;
+  padding: 20px 0;
+
+
+}
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+
+
+}
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* .footer a {
+  text-decoration: none;
+  color: #88BBD6;
+  font-weight: bold;
+
+} */
+.footer p {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  height: 25px;
+  line-height: 25px;
+}
+.footer #git {
+  padding-left: 20px;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .header img {
+    width:217px;  
+    height: 43px;
+  }
+  .main h1 {
+    font-size: 40px;
+  
+  }
+  .main .col-md-5 {
+    top: 180px;
+}
+}
+
+
